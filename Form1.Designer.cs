@@ -34,8 +34,10 @@
             bntAdicionarCarrinho = new Button();
             bntFinalizarPedido = new Button();
             bntRemoverItem = new Button();
-            txtQuantidade = new TextBox();
             txtNomeCliente = new TextBox();
+            label1 = new Label();
+            txtQuantidade = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)txtQuantidade).BeginInit();
             SuspendLayout();
             // 
             // cmbMetodoPagamento
@@ -66,12 +68,13 @@
             // 
             // bntAdicionarCarrinho
             // 
-            bntAdicionarCarrinho.Location = new Point(385, 124);
+            bntAdicionarCarrinho.Location = new Point(385, 122);
             bntAdicionarCarrinho.Name = "bntAdicionarCarrinho";
             bntAdicionarCarrinho.Size = new Size(75, 23);
             bntAdicionarCarrinho.TabIndex = 3;
             bntAdicionarCarrinho.Text = "Adicionar";
             bntAdicionarCarrinho.UseVisualStyleBackColor = true;
+            bntAdicionarCarrinho.Click += bntAdicionarCarrinho_Click;
             // 
             // bntFinalizarPedido
             // 
@@ -91,27 +94,36 @@
             bntRemoverItem.Text = "Remover";
             bntRemoverItem.UseVisualStyleBackColor = true;
             // 
-            // txtQuantidade
-            // 
-            txtQuantidade.Location = new Point(147, 334);
-            txtQuantidade.Name = "txtQuantidade";
-            txtQuantidade.Size = new Size(100, 23);
-            txtQuantidade.TabIndex = 6;
-            // 
             // txtNomeCliente
             // 
-            txtNomeCliente.Location = new Point(286, 57);
+            txtNomeCliente.Location = new Point(385, 263);
             txtNomeCliente.Name = "txtNomeCliente";
             txtNomeCliente.Size = new Size(100, 23);
             txtNomeCliente.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(316, 325);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 8;
+            // 
+            // txtQuantidade
+            // 
+            txtQuantidade.Location = new Point(316, 86);
+            txtQuantidade.Name = "txtQuantidade";
+            txtQuantidade.Size = new Size(120, 23);
+            txtQuantidade.TabIndex = 9;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtNomeCliente);
             Controls.Add(txtQuantidade);
+            Controls.Add(label1);
+            Controls.Add(txtNomeCliente);
             Controls.Add(bntRemoverItem);
             Controls.Add(bntFinalizarPedido);
             Controls.Add(bntAdicionarCarrinho);
@@ -120,6 +132,8 @@
             Controls.Add(cmbMetodoPagamento);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)txtQuantidade).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,7 +146,8 @@
         private Button bntAdicionarCarrinho;
         private Button bntFinalizarPedido;
         private Button bntRemoverItem;
-        private TextBox txtQuantidade;
         private TextBox txtNomeCliente;
+        private Label label1;
+        private NumericUpDown txtQuantidade;
     }
 }
