@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cmbMetodoPagamento = new ComboBox();
             lstProdutos = new ListBox();
             lstCarrinho = new ListBox();
             bntAdicionarCarrinho = new Button();
@@ -43,19 +42,10 @@
             label3 = new Label();
             valorreebidotxt = new TextBox();
             label4 = new Label();
-            lblValorTroco = new Label();
+            lblTroco = new Label();
+            metododePagamento = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)txtQuantidade).BeginInit();
             SuspendLayout();
-            // 
-            // cmbMetodoPagamento
-            // 
-            cmbMetodoPagamento.FormattingEnabled = true;
-            cmbMetodoPagamento.Items.AddRange(new object[] { "Débito", "Crédito", "Pix", "Dinheiro" });
-            cmbMetodoPagamento.Location = new Point(326, 276);
-            cmbMetodoPagamento.Name = "cmbMetodoPagamento";
-            cmbMetodoPagamento.Size = new Size(121, 23);
-            cmbMetodoPagamento.TabIndex = 0;
-            cmbMetodoPagamento.SelectedIndexChanged += cmbMetodoPagamento_SelectedIndexChanged;
             // 
             // lstProdutos
             // 
@@ -152,9 +142,10 @@
             labeltotal.AutoSize = true;
             labeltotal.Location = new Point(610, 343);
             labeltotal.Name = "labeltotal";
-            labeltotal.Size = new Size(41, 15);
+            labeltotal.Size = new Size(13, 15);
             labeltotal.TabIndex = 12;
-            labeltotal.Text = "R$0,00";
+            labeltotal.Text = "0";
+            labeltotal.Click += labeltotal_Click;
             // 
             // label3
             // 
@@ -171,6 +162,7 @@
             valorreebidotxt.Name = "valorreebidotxt";
             valorreebidotxt.Size = new Size(100, 23);
             valorreebidotxt.TabIndex = 14;
+            valorreebidotxt.Text = "0";
             valorreebidotxt.TextChanged += valorreebidotxt_TextChanged;
             // 
             // label4
@@ -182,21 +174,31 @@
             label4.TabIndex = 15;
             label4.Text = "troco";
             // 
-            // lblValorTroco
+            // lblTroco
             // 
-            lblValorTroco.AutoSize = true;
-            lblValorTroco.Location = new Point(343, 372);
-            lblValorTroco.Name = "lblValorTroco";
-            lblValorTroco.Size = new Size(44, 15);
-            lblValorTroco.TabIndex = 16;
-            lblValorTroco.Text = "R$ 0,00";
+            lblTroco.AutoSize = true;
+            lblTroco.Location = new Point(343, 372);
+            lblTroco.Name = "lblTroco";
+            lblTroco.Size = new Size(44, 15);
+            lblTroco.TabIndex = 16;
+            lblTroco.Text = "R$ 0,00";
+            // 
+            // metododePagamento
+            // 
+            metododePagamento.FormattingEnabled = true;
+            metododePagamento.Location = new Point(316, 274);
+            metododePagamento.Name = "metododePagamento";
+            metododePagamento.Size = new Size(121, 23);
+            metododePagamento.TabIndex = 17;
+            metododePagamento.SelectedIndexChanged += metododePagamento_SelectedIndexChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblValorTroco);
+            Controls.Add(metododePagamento);
+            Controls.Add(lblTroco);
             Controls.Add(label4);
             Controls.Add(valorreebidotxt);
             Controls.Add(label3);
@@ -211,7 +213,6 @@
             Controls.Add(bntAdicionarCarrinho);
             Controls.Add(lstCarrinho);
             Controls.Add(lstProdutos);
-            Controls.Add(cmbMetodoPagamento);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load_1;
@@ -221,8 +222,6 @@
         }
 
         #endregion
-
-        private ComboBox cmbMetodoPagamento;
         private ListBox lstProdutos;
         private ListBox lstCarrinho;
         private Button bntAdicionarCarrinho;
@@ -237,6 +236,7 @@
         private Label label3;
         private TextBox valorreebidotxt;
         private Label label4;
-        private Label lblValorTroco;
+        private Label lblTroco;
+        private ComboBox metododePagamento;
     }
 }

@@ -13,6 +13,8 @@ namespace WinFormsApp4
         public Form1()
         {
             InitializeComponent();
+            metododePagamento.Items.AddRange(new string[] { "Pix", "Cartão de Crédito/Débito", "Dinheiro" });
+            metododePagamento.SelectedIndex = 0;
             Total();
 
             produtos.Add(new Produto { Codigo = 1, Nome = "Coxinha", Estoque = 20, Preco = 5.00m });
@@ -37,7 +39,7 @@ namespace WinFormsApp4
                 total += produto.Subtotal;
 
             }
-            labeltotal.Text = $"R$ {total.ToString("N2", new CultureInfo("pt-BR"))}";
+            labeltotal.Text = total.ToString();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -76,7 +78,7 @@ namespace WinFormsApp4
                 Produto produto = (Produto)lstCarrinho.SelectedItem;
 
                 total -= produto.Preco;
-                lblTotal.Text = "O valor total da compra é: R$ " + total.ToString("F2");
+                labeltotal.Text = total.ToString();
                 lstCarrinho.Items.RemoveAt(lstCarrinho.SelectedIndex);
 
                 if (total == 0)
@@ -90,14 +92,7 @@ namespace WinFormsApp4
                 MessageBox.Show("Selecione algo do Carrinho Por Favor.");
             }
         }
-        private void Troco();
-        {
-          if (decimal.TryParse(valorrecebidotxt.text,out decimal valorRecebido))
-          {
-              decimal troco = valorRecebido - totalPedido;
-              if (troco < 0) troco =0;
-              lblValorTroco.Text = TableLa
-        }
+
 
         private void bntAdicionarCarrinho_Click(object sender, EventArgs e)
         {
@@ -153,6 +148,35 @@ namespace WinFormsApp4
         private void bntFinalizarPedido_Click(object sender, EventArgs e)
         {
 
+
+            if (metododePagamento.SelectedIndex == 2 && valorreebidotxt.Text != "")
+            {
+                decimal valorRecebido = decimal.Parse(valorreebidotxt.Text);
+                decimal total = decimal.Parse(labeltotal.Text);
+
+                if (valorRecebido >= total)
+                {
+
+
+                    decimal troco = valorRecebido - total;
+
+                    lblTroco.Text = troco.ToString();
+                }
+
+                else
+                {
+                    MessageBox.Show("vc e pobre e fodido e n tem dinheiro e ta faltando dinheiro kkkkk");
+                }
+            }
+            else
+            {
+                MessageBox.Show("nao tem nada");
+            }
+
+
+
+
+
         }
 
         private void txtNomeCliente_TextChanged(object sender, EventArgs e)
@@ -163,6 +187,22 @@ namespace WinFormsApp4
         private void valorreebidotxt_TextChanged(object sender, EventArgs e)
         {
 
+
+
+        }
+
+        private void labeltotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metododePagamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (metododePagamento.SelectedIndex == 0 || metododePagamento.SelectedIndex == 1)
+            {
+                valorreebidotxt.Text = labeltotal.Text;
+
+            }
         }
     }
 
