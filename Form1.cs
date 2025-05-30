@@ -17,15 +17,11 @@ namespace WinFormsApp4
             metododePagamento.SelectedIndex = 0;
             Total();
 
-            produtos.Add(new Produto { Codigo = 1, Nome = "Coxinha", Estoque = 20, Preco = 5.00m });
-            produtos.Add(new Produto { Codigo = 2, Nome = "Refrigerante", Estoque = 30, Preco = 6.50m });
-            produtos.Add(new Produto { Codigo = 3, Nome = "Pão de Queijo", Estoque = 15, Preco = 3.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 1, Nome = "Coxinha", Estoque = 20, Preco = 5.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 2, Nome = "Refrigerante", Estoque = 30, Preco = 6.50m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Pão de Queijo", Estoque = 15, Preco = 3.00m });
 
 
-            foreach (Produto produto in produtos)
-            {
-                lstProdutos.Items.Add(produto);
-            }
         }
         private void Total()
         {
@@ -53,15 +49,6 @@ namespace WinFormsApp4
 
 
         }
-
-
-        private void btnRemoverItem_Click(object sender, EventArgs e)
-
-
-        {
-
-        }
-
         private void AtualizarListas()
         {
             lstProdutos.DataSource = null;
@@ -128,16 +115,16 @@ namespace WinFormsApp4
         private void bntRemoverItem_Click(object sender, EventArgs e)
         {
 
-            if (lstCarrinho.SelectedIndex != null)
+            if (lstCarrinho.SelectedItem != null) 
             {
-
-                lstCarrinho.Items.RemoveAt(lstCarrinho.SelectedIndex);
+                ItemCarrinho item = (ItemCarrinho)lstCarrinho.SelectedItem;
+                lstCarrinho.Items.Remove(lstCarrinho.SelectedItem);
             }
-            else
-            {
+            
+            
 
 
-            }
+            
         }
 
         private void cmbMetodoPagamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -165,12 +152,12 @@ namespace WinFormsApp4
 
                 else
                 {
-                    MessageBox.Show("vc e pobre e fodido e n tem dinheiro e ta faltando dinheiro kkkkk");
+                    MessageBox.Show("falta grana ae ");
                 }
             }
             else
             {
-                MessageBox.Show("nao tem nada");
+                MessageBox.Show("nao escolheu nada");
             }
 
 
@@ -203,6 +190,17 @@ namespace WinFormsApp4
                 valorreebidotxt.Text = labeltotal.Text;
 
             }
+            else { }
+        }
+
+        private void lstProdutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstCarrinho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

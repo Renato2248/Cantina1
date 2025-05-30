@@ -51,10 +51,11 @@
             // 
             lstProdutos.FormattingEnabled = true;
             lstProdutos.ItemHeight = 15;
-            lstProdutos.Location = new Point(147, 86);
+            lstProdutos.Location = new Point(83, 86);
             lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(120, 184);
+            lstProdutos.Size = new Size(184, 184);
             lstProdutos.TabIndex = 1;
+            lstProdutos.SelectedIndexChanged += lstProdutos_SelectedIndexChanged;
             // 
             // lstCarrinho
             // 
@@ -62,8 +63,9 @@
             lstCarrinho.ItemHeight = 15;
             lstCarrinho.Location = new Point(560, 86);
             lstCarrinho.Name = "lstCarrinho";
-            lstCarrinho.Size = new Size(120, 184);
+            lstCarrinho.Size = new Size(186, 184);
             lstCarrinho.TabIndex = 2;
+            lstCarrinho.SelectedIndexChanged += lstCarrinho_SelectedIndexChanged;
             // 
             // bntAdicionarCarrinho
             // 
