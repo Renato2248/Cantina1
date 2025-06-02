@@ -162,9 +162,9 @@ namespace WinFormsApp4
                 MessageBox.Show("nao escolheu nada");
             }
 
+            
 
-
-
+            MessageBox.Show($"Compra já Feita \n Nome: {txtNomeCliente}");
 
         }
 
