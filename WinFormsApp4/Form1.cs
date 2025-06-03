@@ -25,7 +25,7 @@ namespace WinFormsApp4
         }
         private void Total()
         {
-            decimal total = 0;
+            total = 0;
 
 
             foreach (ItemCarrinho produto in lstCarrinho.Items)
@@ -151,20 +151,27 @@ namespace WinFormsApp4
 
                     lblTroco.Text = troco.ToString();
                 }
-
                 else
                 {
                     MessageBox.Show("falta grana ae ");
                 }
             }
-            else
-            {
-                MessageBox.Show("nao escolheu nada");
-            }
 
+            if (metododePagamento.SelectedIndex == -1) 
+
+            {
+                MessageBox.Show("nao escolheu metodo de pagamento");
+                return;
+            }
             
 
-            MessageBox.Show($"Compra já Feita \n Nome: {txtNomeCliente}");
+            MessageBox.Show($"Compra já Feita \n" +
+               $" Nome: {txtNomeCliente.Text} \n" +
+               $" Data: {DateTime.Now.ToString("dd/MM/yyyy HH:mm")} \n" +
+               $" MetodoDePagamento: {metododePagamento.SelectedItem} \n" +
+               $" Valor pago: {total.ToString("C", new CultureInfo("pt-BR"))}");
+
+
 
         }
 
