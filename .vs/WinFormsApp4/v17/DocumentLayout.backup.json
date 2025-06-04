@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\25162630\\Documents\\Cantina1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|c:\\users\\25162630\\documents\\cantina1\\winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|solutionrelative:winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|C:\\Users\\25162630\\Documents\\Cantina1\\winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|solutionrelative:winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|c:\\users\\25162630\\documents\\cantina1\\winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|solutionrelative:winformsapp4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CDEBD9A-3C07-44F3-807D-1376EFCF68D4}|WinFormsApp4\\WinFormsApp4.csproj|c:\\users\\25162630\\documents\\cantina1\\winformsapp4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,29 +34,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp4\\Form1.cs",
-              "ToolTip": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs*",
-              "RelativeToolTip": "WinFormsApp4\\Form1.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswCMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp4\\Form1.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAcwKQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T11:55:33.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp4\\Form1.cs",
-              "ToolTip": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs [Projeto]*",
-              "RelativeToolTip": "WinFormsApp4\\Form1.cs [Projeto]*",
+              "ToolTip": "C:\\Users\\25162630\\Documents\\Cantina1\\WinFormsApp4\\Form1.cs [Projeto]",
+              "RelativeToolTip": "WinFormsApp4\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T11:52:25.612Z",
               "EditorCaption": " [Projeto]"
@@ -71,8 +71,7 @@
               "RelativeToolTip": "WinFormsApp4\\ItemCarrinho.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:53:05.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:53:05.156Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "WinFormsApp4\\WinFormsApp4.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-02T11:53:22.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:53:22.179Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "WinFormsApp4\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:53:06.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:53:06.878Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "WinFormsApp4\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:52:38.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T11:52:38.077Z"
             }
           ]
         }

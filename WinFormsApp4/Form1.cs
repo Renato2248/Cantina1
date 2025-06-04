@@ -36,7 +36,7 @@ namespace WinFormsApp4
 
             }
             labeltotal.Text = total.ToString();
-            
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -116,17 +116,17 @@ namespace WinFormsApp4
         private void bntRemoverItem_Click(object sender, EventArgs e)
         {
 
-            if (lstCarrinho.SelectedItem != null) 
+            if (lstCarrinho.SelectedItem != null)
             {
                 ItemCarrinho item = (ItemCarrinho)lstCarrinho.SelectedItem;
                 lstCarrinho.Items.Remove(lstCarrinho.SelectedItem);
             }
             Total();
-            
-            
 
 
-            
+
+
+
         }
 
         private void cmbMetodoPagamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -157,13 +157,13 @@ namespace WinFormsApp4
                 }
             }
 
-            if (metododePagamento.SelectedIndex == -1) 
+            if (metododePagamento.SelectedIndex == -1)
 
             {
                 MessageBox.Show("nao escolheu metodo de pagamento");
                 return;
             }
-            
+
 
             MessageBox.Show($"Compra já Feita \n" +
                $" Nome: {txtNomeCliente.Text} \n" +
@@ -208,6 +208,11 @@ namespace WinFormsApp4
         }
 
         private void lstCarrinho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
