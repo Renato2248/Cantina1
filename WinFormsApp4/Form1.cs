@@ -18,10 +18,15 @@ namespace WinFormsApp4
             Total();
 
             lstProdutos.Items.Add(new Produto { Codigo = 1, Nome = "Coxinha", Estoque = 20, Preco = 5.00m });
-            lstProdutos.Items.Add(new Produto { Codigo = 2, Nome = "Refrigerante", Estoque = 30, Preco = 6.50m });
-            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Pão de Queijo", Estoque = 15, Preco = 3.00m });
-
-
+            lstProdutos.Items.Add(new Produto { Codigo = 2, Nome = "Refrigerante Lata", Estoque = 30, Preco = 4.50m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Pão de Queijo", Estoque = 15, Preco = 3.50m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Pastel Carne", Estoque = 15, Preco = 6.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Pastel Queijo", Estoque = 15, Preco = 5.50m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Suco Natural", Estoque = 15, Preco = 4.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Hamburguer de Queijo", Estoque = 15, Preco = 9.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Hamburguer Simples", Estoque = 15, Preco = 8.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "X-Tudo", Estoque = 15, Preco = 12.00m });
+            lstProdutos.Items.Add(new Produto { Codigo = 3, Nome = "Agua Mineral", Estoque = 15, Preco = 2.50m });
         }
         private void Total()
         {
@@ -215,6 +220,17 @@ namespace WinFormsApp4
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblTroco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Butaobalcao_Click(object sender, EventArgs e)
+        {
+            Form2 formBalcao = new Form2();
+            formBalcao.ShowDialog();
         }
     }
 

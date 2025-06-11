@@ -46,6 +46,8 @@
             lblTroco = new Label();
             metododePagamento = new ComboBox();
             pictureBox1 = new PictureBox();
+            label5 = new Label();
+            Butaobalcao = new Button();
             ((System.ComponentModel.ISupportInitialize)txtQuantidade).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -55,9 +57,9 @@
             lstProdutos.BackColor = Color.FromArgb(243, 241, 238);
             lstProdutos.FormattingEnabled = true;
             lstProdutos.ItemHeight = 15;
-            lstProdutos.Location = new Point(83, 86);
+            lstProdutos.Location = new Point(12, 86);
             lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(184, 184);
+            lstProdutos.Size = new Size(255, 199);
             lstProdutos.TabIndex = 1;
             lstProdutos.SelectedIndexChanged += lstProdutos_SelectedIndexChanged;
             // 
@@ -66,18 +68,20 @@
             lstCarrinho.BackColor = Color.FromArgb(243, 241, 238);
             lstCarrinho.FormattingEnabled = true;
             lstCarrinho.ItemHeight = 15;
-            lstCarrinho.Location = new Point(560, 86);
+            lstCarrinho.Location = new Point(478, 86);
             lstCarrinho.Name = "lstCarrinho";
-            lstCarrinho.Size = new Size(186, 184);
+            lstCarrinho.Size = new Size(240, 199);
             lstCarrinho.TabIndex = 2;
             lstCarrinho.SelectedIndexChanged += lstCarrinho_SelectedIndexChanged;
             // 
             // bntAdicionarCarrinho
             // 
-            bntAdicionarCarrinho.BackColor = Color.FromArgb(243, 241, 238);
-            bntAdicionarCarrinho.Location = new Point(326, 129);
+            bntAdicionarCarrinho.BackColor = Color.FromArgb(230, 255, 0);
+            bntAdicionarCarrinho.FlatStyle = FlatStyle.Flat;
+            bntAdicionarCarrinho.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            bntAdicionarCarrinho.Location = new Point(323, 129);
             bntAdicionarCarrinho.Name = "bntAdicionarCarrinho";
-            bntAdicionarCarrinho.Size = new Size(75, 23);
+            bntAdicionarCarrinho.Size = new Size(120, 33);
             bntAdicionarCarrinho.TabIndex = 3;
             bntAdicionarCarrinho.Text = "Adicionar";
             bntAdicionarCarrinho.UseVisualStyleBackColor = false;
@@ -91,7 +95,7 @@
             bntFinalizarPedido.FlatAppearance.BorderSize = 0;
             bntFinalizarPedido.FlatStyle = FlatStyle.Flat;
             bntFinalizarPedido.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            bntFinalizarPedido.Location = new Point(302, 432);
+            bntFinalizarPedido.Location = new Point(522, 501);
             bntFinalizarPedido.Name = "bntFinalizarPedido";
             bntFinalizarPedido.Size = new Size(225, 65);
             bntFinalizarPedido.TabIndex = 4;
@@ -101,11 +105,12 @@
             // 
             // bntRemoverItem
             // 
-            bntRemoverItem.BackColor = Color.FromArgb(243, 241, 238);
+            bntRemoverItem.BackColor = Color.FromArgb(230, 255, 0);
             bntRemoverItem.FlatStyle = FlatStyle.Flat;
-            bntRemoverItem.Location = new Point(326, 167);
+            bntRemoverItem.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            bntRemoverItem.Location = new Point(323, 195);
             bntRemoverItem.Name = "bntRemoverItem";
-            bntRemoverItem.Size = new Size(75, 23);
+            bntRemoverItem.Size = new Size(120, 32);
             bntRemoverItem.TabIndex = 5;
             bntRemoverItem.Text = "Remover";
             bntRemoverItem.UseVisualStyleBackColor = false;
@@ -114,7 +119,7 @@
             // txtNomeCliente
             // 
             txtNomeCliente.BackColor = Color.FromArgb(243, 241, 238);
-            txtNomeCliente.Location = new Point(326, 209);
+            txtNomeCliente.Location = new Point(903, 104);
             txtNomeCliente.Name = "txtNomeCliente";
             txtNomeCliente.Size = new Size(100, 23);
             txtNomeCliente.TabIndex = 7;
@@ -131,7 +136,7 @@
             // txtQuantidade
             // 
             txtQuantidade.BackColor = Color.FromArgb(243, 241, 238);
-            txtQuantidade.Location = new Point(326, 86);
+            txtQuantidade.Location = new Point(323, 86);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(120, 23);
             txtQuantidade.TabIndex = 9;
@@ -142,9 +147,10 @@
             lblTotal.AutoSize = true;
             lblTotal.BackColor = Color.FromArgb(230, 255, 0);
             lblTotal.FlatStyle = FlatStyle.Flat;
-            lblTotal.Location = new Point(560, 343);
+            lblTotal.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            lblTotal.Location = new Point(537, 423);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(33, 15);
+            lblTotal.Size = new Size(51, 21);
             lblTotal.TabIndex = 10;
             lblTotal.Text = "Total";
             // 
@@ -152,18 +158,21 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(230, 255, 0);
-            label2.Location = new Point(279, 217);
+            label2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            label2.Location = new Point(772, 104);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(124, 21);
             label2.TabIndex = 11;
-            label2.Text = "Nome";
+            label2.Text = "Nomes Cliente";
             // 
             // labeltotal
             // 
             labeltotal.AutoSize = true;
-            labeltotal.Location = new Point(610, 343);
+            labeltotal.BackColor = Color.FromArgb(243, 241, 238);
+            labeltotal.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            labeltotal.Location = new Point(627, 423);
             labeltotal.Name = "labeltotal";
-            labeltotal.Size = new Size(13, 15);
+            labeltotal.Size = new Size(20, 21);
             labeltotal.TabIndex = 12;
             labeltotal.Text = "0";
             labeltotal.Click += labeltotal_Click;
@@ -173,7 +182,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(230, 255, 0);
             label3.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(194, 340);
+            label3.Location = new Point(772, 206);
             label3.Name = "label3";
             label3.Size = new Size(125, 21);
             label3.TabIndex = 13;
@@ -182,9 +191,10 @@
             // valorreebidotxt
             // 
             valorreebidotxt.BackColor = Color.FromArgb(243, 241, 238);
-            valorreebidotxt.Location = new Point(325, 340);
+            valorreebidotxt.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            valorreebidotxt.Location = new Point(903, 206);
             valorreebidotxt.Name = "valorreebidotxt";
-            valorreebidotxt.Size = new Size(100, 23);
+            valorreebidotxt.Size = new Size(100, 29);
             valorreebidotxt.TabIndex = 14;
             valorreebidotxt.Text = "0";
             valorreebidotxt.TextChanged += valorreebidotxt_TextChanged;
@@ -193,7 +203,7 @@
             // 
             label4.BackColor = Color.FromArgb(230, 255, 0);
             label4.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(194, 372);
+            label4.Location = new Point(771, 251);
             label4.Name = "label4";
             label4.Size = new Size(126, 22);
             label4.TabIndex = 15;
@@ -204,17 +214,20 @@
             // lblTroco
             // 
             lblTroco.AutoSize = true;
-            lblTroco.Location = new Point(343, 372);
+            lblTroco.BackColor = Color.FromArgb(243, 241, 238);
+            lblTroco.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            lblTroco.Location = new Point(903, 252);
             lblTroco.Name = "lblTroco";
-            lblTroco.Size = new Size(44, 15);
+            lblTroco.Size = new Size(70, 21);
             lblTroco.TabIndex = 16;
             lblTroco.Text = "R$ 0,00";
+            lblTroco.Click += lblTroco_Click;
             // 
             // metododePagamento
             // 
             metododePagamento.BackColor = Color.FromArgb(243, 241, 238);
             metododePagamento.FormattingEnabled = true;
-            metododePagamento.Location = new Point(316, 274);
+            metododePagamento.Location = new Point(903, 155);
             metododePagamento.Name = "metododePagamento";
             metododePagamento.Size = new Size(121, 23);
             metododePagamento.TabIndex = 17;
@@ -222,7 +235,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(243, 241, 238);
+            pictureBox1.BackColor = Color.FromArgb(230, 255, 0);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(86, 12);
             pictureBox1.Name = "pictureBox1";
@@ -231,12 +244,35 @@
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(230, 255, 0);
+            label5.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold | FontStyle.Italic);
+            label5.Location = new Point(772, 153);
+            label5.Name = "label5";
+            label5.Size = new Size(126, 21);
+            label5.TabIndex = 19;
+            label5.Text = "Form de Pagar";
+            // 
+            // Butaobalcao
+            // 
+            Butaobalcao.Location = new Point(185, 528);
+            Butaobalcao.Name = "Butaobalcao";
+            Butaobalcao.Size = new Size(75, 23);
+            Butaobalcao.TabIndex = 20;
+            Butaobalcao.Text = "Balcão";
+            Butaobalcao.UseVisualStyleBackColor = true;
+            Butaobalcao.Click += Butaobalcao_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(124, 122, 106);
             ClientSize = new Size(1391, 649);
+            Controls.Add(Butaobalcao);
+            Controls.Add(label5);
             Controls.Add(pictureBox1);
             Controls.Add(metododePagamento);
             Controls.Add(lblTroco);
@@ -281,5 +317,7 @@
         private Label lblTroco;
         private ComboBox metododePagamento;
         private PictureBox pictureBox1;
+        private Label label5;
+        private Button Butaobalcao;
     }
 }
